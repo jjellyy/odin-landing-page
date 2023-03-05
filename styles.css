@@ -3,6 +3,9 @@ body {
     flex-direction: column;
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     background-color: #f1ebe1;
+    padding: 0;
+    margin: 0;
+    min-height: 100vh;
 }
 
 a {
@@ -11,7 +14,7 @@ a {
     font-weight: bold;
 }
 
-h1 {
+h1, h2, h3 {
     margin: 0;
 }
 
@@ -25,9 +28,17 @@ button {
     border: 0;
     font-weight: bold;
     font-size: 16px;
+    background-color: #44624a;
+    cursor: pointer;
+    transition-duration: 0.4s;
 }
 
-.header {
+button:hover {
+    background-color: #608b69;
+}
+
+.header,
+.footer {
     background-color: #8ba888;
     display: flex;
     justify-content: center;
@@ -73,23 +84,21 @@ button {
     gap: 20px;
 }
 
-.hero button {
-    background-color: #44624a;
-}
-
 .content {
     color: rgb(108, 60, 14);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 50px;
+    padding: 50px 0;
+    flex: 1;
 }
 
-.title {
-    text-align: center;
-    margin: 40px;
-}
 
 .content-grid {
     display: flex;
-    justify-content: center;
     gap: 40px;
+    flex-wrap: wrap;
 }
 
 .card {
@@ -103,17 +112,17 @@ button {
 
 .quote {
     background-color: #c0cfb2;
-    margin: 100px 0;
     display: flex;
     flex-direction: column;
     align-items: center;
+    width: 100%;
 }
 
 .quote-body {
-    margin-top: 40px;
     width: 60%;
     font-size: 32px;
     font-style: italic;
+    padding-top: 60px;
 }
 
 .quote-author {
@@ -121,5 +130,25 @@ button {
     font-size: 20px;
     font-weight: bold;
     text-align: right;
-    margin-bottom: 60px;
+    padding: 60px;
+}
+
+.cta {
+    display: flex;
+    justify-content: space-between;
+    background-color: #44624a;
+    color: white;
+    border-radius: 10px;
+    padding: 40px 100px;
+    gap: 50px;
+}
+
+.cta button {
+    border: 2px solid white;
+    border-radius: 10px;
+}
+
+.footer {
+    color: white;
+    padding: 20px;
 }
