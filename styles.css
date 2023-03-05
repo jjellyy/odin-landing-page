@@ -1,15 +1,22 @@
 body {
     display: flex;
     flex-direction: column;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background-color: #f1ebe1;
 }
 
 a {
     text-decoration: none;
     color: #f1ebe1;
+    font-weight: bold;
 }
 
 h1 {
     margin: 0;
+}
+
+img {
+    border-radius: 25px;
 }
 
 button {
@@ -31,6 +38,7 @@ button {
     justify-content: space-between;
     padding: 20px;
     width: 80%;
+    gap: 50px;
 }
 
 .header .inner {
@@ -66,4 +74,28 @@ button {
 
 .hero button {
     background-color: #44624a;
+}
+
+.content {
+    color: rgb(108, 60, 14);
+}
+
+.title {
+    text-align: center;
+    margin: 40px;
+}
+
+.content-grid {
+    display: flex;
+    justify-content: center;
+    gap: 40px;
+}
+
+.card {
+    width: 150px;
+    text-align: center;
+}
+
+.card img {
+    border: 3px solid #8ba888;
 }
